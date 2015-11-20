@@ -5,14 +5,14 @@ interface Strategy
     public function doSomething();
 }
 
-class FirstStrategy
+class FirstStrategy implements Strategy
 {
     public function doSomething() {
         return "I'm working under primary strategy!";
     }
 }
 
-class SecondStrategy
+class SecondStrategy implements Strategy
 {
     public function doSomething() {
         return "I'm working under secondary strategy!";
